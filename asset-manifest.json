@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hw03-image-finder/static/css/main.a617e044.chunk.css",
-    "main.js": "/hw03-image-finder/static/js/main.bcaac39a.chunk.js",
-    "main.js.map": "/hw03-image-finder/static/js/main.bcaac39a.chunk.js.map",
-    "runtime-main.js": "/hw03-image-finder/static/js/runtime-main.28fc2632.js",
-    "runtime-main.js.map": "/hw03-image-finder/static/js/runtime-main.28fc2632.js.map",
-    "static/js/2.f08882c4.chunk.js": "/hw03-image-finder/static/js/2.f08882c4.chunk.js",
-    "static/js/2.f08882c4.chunk.js.map": "/hw03-image-finder/static/js/2.f08882c4.chunk.js.map",
-    "static/js/3.bb0f6167.chunk.js": "/hw03-image-finder/static/js/3.bb0f6167.chunk.js",
-    "static/js/3.bb0f6167.chunk.js.map": "/hw03-image-finder/static/js/3.bb0f6167.chunk.js.map",
+    "main.css": "/hw03-image-finder/static/css/main.700278d8.chunk.css",
+    "main.js": "/hw03-image-finder/static/js/main.f1d6d37a.chunk.js",
+    "main.js.map": "/hw03-image-finder/static/js/main.f1d6d37a.chunk.js.map",
+    "runtime-main.js": "/hw03-image-finder/static/js/runtime-main.1a4823c4.js",
+    "runtime-main.js.map": "/hw03-image-finder/static/js/runtime-main.1a4823c4.js.map",
+    "static/css/2.ab75b8d7.chunk.css": "/hw03-image-finder/static/css/2.ab75b8d7.chunk.css",
+    "static/js/2.a4ae817a.chunk.js": "/hw03-image-finder/static/js/2.a4ae817a.chunk.js",
+    "static/js/2.a4ae817a.chunk.js.map": "/hw03-image-finder/static/js/2.a4ae817a.chunk.js.map",
     "index.html": "/hw03-image-finder/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/hw03-image-finder/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.f08882c4.chunk.js.LICENSE.txt": "/hw03-image-finder/static/js/2.f08882c4.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/hw03-image-finder/static/media/logo.6ce24c58.svg"
+    "static/css/2.ab75b8d7.chunk.css.map": "/hw03-image-finder/static/css/2.ab75b8d7.chunk.css.map",
+    "static/css/main.700278d8.chunk.css.map": "/hw03-image-finder/static/css/main.700278d8.chunk.css.map",
+    "static/js/2.a4ae817a.chunk.js.LICENSE.txt": "/hw03-image-finder/static/js/2.a4ae817a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.28fc2632.js",
-    "static/js/2.f08882c4.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.bcaac39a.chunk.js"
+    "static/js/runtime-main.1a4823c4.js",
+    "static/css/2.ab75b8d7.chunk.css",
+    "static/js/2.a4ae817a.chunk.js",
+    "static/css/main.700278d8.chunk.css",
+    "static/js/main.f1d6d37a.chunk.js"
   ]
 }
