@@ -1,49 +1,40 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-import style from './Searchbar.module.scss';
+import { Component } from 'react';
 
 class Searchbar extends Component {
-  state = { serchQuery: '' };
-
-  handleChange = e => {
-    this.setState({ serchQuery: e.currentTarget.value });
+  state = {
+    value: '',
   };
 
-  handleSubmit = e => {
+  changeHandler = (e) => {
+    this.setState({ value: e.target.value });
+  };
+
+  submitHandler = (e) => {
     e.preventDefault();
-
-    this.props.onSubmit(this.state.serchQuery);
-
-    this.setState({ serchQuery: '' });
+    this.props.onSubmit(this.state.value.trim());
   };
 
   render() {
-    const { serchQuery } = this.state;
     return (
-      <header className={style.Searchbar}>
-        <form className={style.SearchForm} onSubmit={this.handleSubmit}>
-          <button type="submit" className={style.SearchForm__button}>
-            <span className={style.SearchForm__button__label}>Search</span>
+      <header className="Searchbar">
+        <form className="SearchForm" onSubmit={this.submitHandler}>
+          <button type="submit" className="SearchForm-button">
+            <span className="SearchForm-button-label">Search</span>
           </button>
 
           <input
-            className={style.SearchForm__input}
+            className="SearchForm-input"
             type="text"
-            value={serchQuery}
-            onChange={this.handleChange}
             autoComplete="off"
             autoFocus
             placeholder="Search images and photos"
+            onChange={this.changeHandler}
+            value={this.state.value}
           />
         </form>
       </header>
     );
   }
 }
-
-Searchbar.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
 
 export default Searchbar;

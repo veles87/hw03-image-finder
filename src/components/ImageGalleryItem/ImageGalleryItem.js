@@ -1,30 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { Component } from 'react';
 
-import style from './ImageGalleryItem.module.scss';
+class ImageGalleryItem extends Component {
+  // componentDidMount(prevProps, prevState) {
+  //   console.log(prevProps);
+  //   console.log(prevState);
+  //   console.log(this.props.index);
+  // }
 
-const ImageGalleryItem = ({ images, setLargeURL }) =>
-  images.map(({ id, webformatURL, largeImageURL, tags }) => (
-    <li key={id} className={style.ImageGalleryItem}>
-      <img
-        onClick={() => setLargeURL(largeImageURL)}
-        src={webformatURL}
-        alt={tags}
-        className={style.ImageGalleryItem__image}
-      />
-    </li>
-  ));
+  render() {
+    return (
+      <li className="ImageGalleryItem">
+        <img
+          src={this.props.webformatURL}
+          alt=""
+          className="ImageGalleryItem-image"
+          onClick={this.props.showImageHandle}
+        />
+      </li>
+    );
+  }
+}
 
-ImageGalleryItem.propTypes = {
-  setLargeURL: PropTypes.func.isRequired,
-
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      webformatURL: PropTypes.string.isRequired,
-      largeImageURL: PropTypes.string.isRequired,
-      tags: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-};
 export default ImageGalleryItem;
