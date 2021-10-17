@@ -47,12 +47,7 @@ class App extends Component {
   };
 
   scrollToHandler = () => {
-    setTimeout(() => {
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: 'smooth',
-      });
-    }, 750);
+    
   };
 
   searchImagesHandler = async () => {
